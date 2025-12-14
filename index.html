@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeWorks Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F7FA;
+      color: #111827;
+    }
+    header {
+      background-color: #0da1a1;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .btn {
+  background-color: #00e6b8;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+
+  /* IMPORTANT */
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00c9a7;
+  transform: scale(1.08);
+}
+
+    footer {
+      background-color: #0da1a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+  color: #1E88E5;
+  margin-bottom: 10px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.portfolio {
+  padding: 60px 20px;
+  background-color: #F5F7FA;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.portfolio-card img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-card h3 {
+  padding: 15px;
+}
+
+.service-box {
+  transition: all 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-card {
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services-container,
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box,
+  .portfolio-card {
+    max-width: 90%;
+  }
+
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PrimeWorks</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>We Build Modern Websites for Businesses</h1>
+    <p>Simple, fast and affordable websites that help your business grow online.</p>
+    <a href="#" class="btn">Contact Us</a>
+  </section>
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="services-container">
+    <div class="service-box">
+      <h3>Website Development</h3>
+      <p>Modern, fast and responsive websites for all businesses.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Business Branding</h3>
+      <p>Professional design to build trust and brand identity.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>SEO Optimization</h3>
+      <p>Rank higher on Google and get more customers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <h2>Our Work</h2>
+
+  <div class="portfolio-container">
+
+    <div class="portfolio-card">
+      <img src="https://plus.unsplash.com/premium_photo-1723809827727-d97ffd18b5b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1c3NpbmVzcyUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D" alt="Bussiness Website">
+      <h3>Business Website</h3>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="https://images.unsplash.com/photo-1682778418768-16081e4470a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D" alt="Restaurant Website">
+      <h3>Restaurant Website</h3>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="https://images.unsplash.com/photo-1570498839593-e565b39455fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vdGJhbGx8ZW58MHx8MHx8fDA%3D" alt="Coaching Website">
+      <h3>Coaching Website</h3>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    &copy; 2025 PrimeWorks Solutions. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
